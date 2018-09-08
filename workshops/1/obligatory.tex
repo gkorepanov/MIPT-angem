@@ -1,0 +1,274 @@
+\def \testtasks {%
+    \restartlist{enumerate}
+    \begin{enumerate}
+
+
+        \item Укажите, какие из тождеств верны для любых матриц $A$, $B$ и $C$:
+        \begin{tasks}(2)
+            \task $\det A + \det B = \det (A+B)$
+            \task $\det A \cdot \det B = \det (AB)$
+            \task $AB = BA$
+            \task $A + B = B + A$
+            \task $\alpha(AB) = (\alpha A) B$
+        \end{tasks}
+
+
+        \item Укажите, какие выражения определены:
+        \begin{tasks}(3)
+            \task $\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} \cdot \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} = $
+            \task $\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} \cdot \begin{pmatrix} 1 & 3 \end{pmatrix} = $
+            \task $\begin{pmatrix} 1 & 2 \end{pmatrix} \cdot \begin{pmatrix} 1 & 3 \end{pmatrix} = $
+            \task $\begin{pmatrix} 1 \\ 2 \end{pmatrix} \cdot \begin{pmatrix} 1 & 3 \end{pmatrix} = $
+            \task $\det \begin{pmatrix} 1 & 3 \\ 2 & 4 \end{pmatrix} = $
+            \task $\det \begin{pmatrix} 1 & 3 \end{pmatrix} = $
+        \end{tasks}
+
+
+        \item Как изменяется детерминант матрицы при
+        \begin{tasks}(1)
+            \task транспонировании
+            \task умножении матрицы на число $\alpha$
+            \task сложении строк матрицы
+            \task перестановке двух строк матрицы
+        \end{tasks}
+
+
+        \item Найти произведение матриц:
+        \[%
+            \begin{pmatrix}
+                1 & 2 \\
+                1 & 1
+            \end{pmatrix}
+            \cdot
+            \begin{pmatrix}
+                2 & 3 \\
+                -1 & -1
+            \end{pmatrix}
+            =
+        \]
+
+
+        \item Транспонировать матрицу:
+        \[%
+            \begin{pmatrix}
+                1 & -1 \\
+                1 & 1
+            \end{pmatrix}
+            ^T = 
+        \]
+
+
+        \item Вычислить детерминант:
+        \[%
+            \det
+            \begin{pmatrix}
+                8 & 1 \\
+                1 & 1
+            \end{pmatrix}
+             = 
+        \]
+
+
+        \item Вычислить:
+        \[%
+            \begin{pmatrix}
+                2 & 1 \\
+                1 & 0
+            \end{pmatrix}
+             +2
+            \begin{pmatrix}
+                0 & \frac{1}{2} \\
+                \frac{1}{2} & 1
+            \end{pmatrix}
+            =
+        \]
+    \end{enumerate}
+}
+
+
+\def \basetasks {%
+    \restartlist{enumerate}
+    \begin{enumerate}
+
+
+        \item Вычислить линейные комбинации:
+            \[
+                \begin{pmatrix}
+                    4 &  2 & 0 \\
+                    1 &  3 & 5 \\
+                    1 & -2 & 3
+                \end{pmatrix}
+                +2
+                \begin{pmatrix}
+                   -2 &  1 & 0 \\
+                   -1 &  0 & 1 \\
+                    1 &  3 & 0
+                \end{pmatrix}
+                -4
+                \begin{pmatrix}
+                   -1 &  0 & -1 \\
+                    0 &  1 &  2 \\
+                   -1 &  0 &  1
+                \end{pmatrix}
+                =
+            \]
+            \[
+                2
+                \begin{pmatrix}
+                    1 \\
+                    2 \\
+                    3 \\
+                    4
+                \end{pmatrix}
+                +
+                \begin{pmatrix}
+                    4 \\
+                    3 \\
+                    2 \\
+                    1
+                \end{pmatrix}
+                -
+                \begin{pmatrix}
+                   -2 \\
+                    6 \\
+                    7 \\
+                    6
+                \end{pmatrix}
+                =
+            \]
+
+
+        \item Найти произведения матриц:
+        \begin{alignat*}{2}
+            \begin{pmatrix}
+                8 & 1 & 1 & 1
+            \end{pmatrix}
+            \cdot
+            \begin{pmatrix}
+                3 \\
+                -1 \\
+                -1 \\
+                -5
+            \end{pmatrix}
+            &=
+            & \hspace{3cm}
+            \begin{pmatrix}
+                8 \\
+                1 \\
+                1 \\
+                1
+            \end{pmatrix}
+            \cdot
+            \begin{pmatrix}
+                1 & 2 & 1 & 2
+            \end{pmatrix}
+            &= \\[1em]
+            \begin{pmatrix}
+                1 & 2 & 3\\
+                3 & 2 & 1
+            \end{pmatrix}
+            \cdot
+            \begin{pmatrix}
+                1 & 1 \\
+                1 & 0 \\
+                1 & 1
+            \end{pmatrix}
+            &=
+            &
+            \begin{pmatrix}
+                1 & 0 & 0\\
+                0 & 2 & 0\\
+                0 & 0 & 10
+            \end{pmatrix}
+            ^{10}
+            &=
+        \end{alignat*}
+
+
+        \item Найдите транспонированные матрицы:
+        \begin{alignat*}{2}
+            \begin{pmatrix}
+                1 & 2 & 3\\
+               -2 & 1 & 2\\
+               -3 & -2 & 1\\
+            \end{pmatrix}
+            ^T&=
+            & \hspace{3cm}
+            \begin{pmatrix}
+                8 \\
+                1 \\
+                1 \\
+                1 \\
+            \end{pmatrix}
+            ^T &=\hspace{3cm} \\[0.5em]
+            \begin{pmatrix}
+                   \     &               &                       & \lambda_1  \\
+                   \     & \shiftright{-30pt}{\raisebox{20pt}{\bigzero}}      & \reflectbox{$\ddots$} &  \\
+                   \     & \lambda_{n-1} & \raisebox{-7pt}{\shiftright{17pt}{\bigzero}}              &  \\
+               \lambda_n &               &                       & 
+            \end{pmatrix}
+            ^T&= 
+        \end{alignat*}
+
+
+        \item Вычислите детерминанты:
+        \begin{align*}
+            \det 
+            \begin{pmatrix}
+                1 & 2 & 3 \\
+                1 & 0 & 1\\
+                1 & 1 & 1\\
+            \end{pmatrix}
+            &= 
+            &
+            \det 
+            \begin{pmatrix}
+                8000 & 1 & -1 \\
+                -101 & 1 & 0 \\
+                10 & 0 & 1 \\
+            \end{pmatrix}
+            &=
+        \end{align*}
+
+
+        \item Решите систему линейных уравнений, пользуясь правилом Крамера:
+        \begin{align*}
+            \begin{cases}
+                2x + y - z = 2 \\
+                3x + y -2z = 3 \\
+                x + z = 3
+            \end{cases}
+            & & 
+            \begin{cases}
+                x + 2y + 3z = 1\\
+                x + y + z = 0\\
+                y + z = 1
+            \end{cases}
+        \end{align*}
+
+
+        \item Вычислите:
+        \begin{align*}
+            A &= \begin{pmatrix}1 & 2 \\2 & 1 \end{pmatrix} &
+            B &= \begin{pmatrix}2 & 1 \\1 & 2 \end{pmatrix} &
+            (A^3 -4B) &=
+        \end{align*}
+
+
+        \item Используя свойства детерминанта, вычислите:
+        \[
+            \det 
+            \begin{pmatrix}
+            0 & 1 & 2 & 3 & 4 & 5 \\
+            1 & 2 & 3 & 4 & 5 & 6 \\
+            1 & 2 & 3 & 5 & 7 & 9 \\
+            1 & 2 & 4 & 6 & 8 & 10 \\
+            1 & 2 & 3 & 4 & 5 & 7 \\
+            1 & 2 & 3 & 4 & 6 & 8
+            \end{pmatrix}
+        \]
+
+
+    \end{enumerate}
+}
+

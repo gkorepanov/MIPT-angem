@@ -1,0 +1,37 @@
+\def \ProveTransposeTask {%
+    \item Докажите тождества:
+    \begin{tasks}(2)
+        \task $(\alpha A)^T = \alpha A^T$
+        \task $(A + B)^T = A^T + B^T$
+        \task $(AB)^T = B^T A^T$
+        \task $(A_1 A_2 \dots A_n)^T = A_n^T \dots A_2^T A_1^T$
+    \end{tasks}
+}
+
+\def \ParamSystemTask {%
+        \item Найдите количество решений системы линейных уравнений при различных $\alpha$:
+        \[
+            \begin{cases}
+                \alpha x + 4 y = 2 + \alpha \\
+                x + \alpha y = 2
+            \end{cases}
+        \]
+}
+
+\def \DeterminantTask {%
+        \item Вычислите детерминант выражения:
+        \[
+            A = \begin{pmatrix}1 & 2 & 1\\ -2 & 1 & 2 \\ -1 & -2 & 1 \end{pmatrix} \qquad
+            B = \begin{pmatrix}0 & 2 & 1\\  2 & 0 & 2 \\  1 &  2 & 0 \end{pmatrix}
+        \]
+        \[
+            \det(A^3-A^2 B +ABA -A B^2) =
+        \]
+}
+
+\def \ProveSimpleTasks {%
+        \item * $a$ и $b$ -- столбцы высоты $n$, $H = ab^T$. Доказать, что $\exists \lambda \in \mathbb{R}: H^2 = \lambda H$.
+        \item * В матрице $A$ порядка $n$ ровно $n$ элементов равны 1, а остальные -- 0. Чему может быть равен $\det A$?
+        \item * Докажите, что детерминант кососимметрической матрицы нечетного порядка всегда равен 0.
+}
+
