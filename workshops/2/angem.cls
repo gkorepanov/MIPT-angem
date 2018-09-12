@@ -75,12 +75,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                              Таблицы и списки                               %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage{tasks}
 
 \RequirePackage[inline]{enumitem}
     \setlist{leftmargin =   1cm,
-             topsep     = -.0\parskip,
-             itemsep    = -.0\parskip
-            }
+             topsep     = -.0\parskip}
+             
 \RequirePackage{booktabs}
 \RequirePackage{array}
     \renewcommand{\arraystretch}{ 1.20 }
