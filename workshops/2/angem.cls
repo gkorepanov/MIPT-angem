@@ -80,6 +80,7 @@
 \RequirePackage[inline]{enumitem}
     \setlist{leftmargin =   1cm,
              topsep     = -.0\parskip}
+    \settasks{after-item-skip=-0.\parskip}
              
 \RequirePackage{booktabs}
 \RequirePackage{array}

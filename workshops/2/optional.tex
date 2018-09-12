@@ -1,37 +1,16 @@
-\def \ProveTransposeTask {%
-    \item Докажите тождества:
-    \begin{tasks}(2)
-        \task $(\alpha A)^T = \alpha A^T$
-        \task $(A + B)^T = A^T + B^T$
-        \task $(AB)^T = B^T A^T$
-        \task $(A_1 A_2 \dots A_n)^T = A_n^T \dots A_2^T A_1^T$
-    \end{tasks}
+\def \CenterTask {%
+    \item Пусть даны $N$ точек $A_1, A_2, \dots, A_n$. Найти \textbf{все} точки $O$ такие, что
+    $$\vec{OA_1} + \vec{OA_2} + \dots + \vec{OA_n} = \vec{0}.$$
 }
 
-\def \ParamSystemTask {%
-        \item Найдите количество решений системы линейных уравнений при различных $\alpha$:
-        \[
-            \begin{cases}
-                \alpha x + 4 y = 2 + \alpha \\
-                x + \alpha y = 2
-            \end{cases}
-        \]
+\def \MedianIntersectionTask {%
+	\item Даны три точки:
+	$$A(x_1, y_1, z_1),\quad B(x_2, y_2, z_2)\quad  \text{и} \quad  C(x_3, y_3, z_3),$$
+	не лежащие на одной прямой. Найдите координаты точки пересечения медиан $\triangle ABC$.
 }
 
-\def \DeterminantTask {%
-        \item Вычислите детерминант выражения:
-        \[
-            A = \begin{pmatrix}1 & 2 & 1\\ -2 & 1 & 2 \\ -1 & -2 & 1 \end{pmatrix} \qquad
-            B = \begin{pmatrix}0 & 2 & 1\\  2 & 0 & 2 \\  1 &  2 & 0 \end{pmatrix}
-        \]
-        \[
-            \det(A^3-A^2 B +ABA -A B^2) =
-        \]
+\def \ParalForthTask {%
+	Три точки
+	$$A(x, y), \quad B(x_2, y_2) \quad \text{и} \quad C(x_3, y_3),$$
+	не лежащие на одной прямой, являются последовательными
 }
-
-\def \ProveSimpleTasks {%
-        \item * $a$ и $b$ -- столбцы высоты $n$, $H = ab^T$. Доказать, что $\exists \lambda \in \mathbb{R}: H^2 = \lambda H$.
-        \item * В матрице $A$ порядка $n$ ровно $n$ элементов равны 1, а остальные -- 0. Чему может быть равен $\det A$?
-        \item * Докажите, что детерминант кососимметрической матрицы нечетного порядка всегда равен 0.
-}
-
