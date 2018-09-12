@@ -1,0 +1,51 @@
+\documentclass{angem}
+\geometry{left=2.5cm, right=2.5cm}
+\usepackage{tasks}
+
+% bigzero for matrices
+\newcommand\bigzero{\makebox(0,0){\text{\huge0}}}
+
+% horizontal analog of raisebox
+\newcommand{\shiftright}[2]{\makebox[#1][r]{\makebox[0pt][l]{#2}}}
+
+\input{obligatory}
+\input{optional}
+
+\newcommand{\studentpage}[2]{%
+    \newpage\setcounter{page}{1}
+    \begin{flushright}
+        Студент: #2
+    \end{flushright}
+
+    \section*{Материалы к воркшопу по аналитической геометрии}
+    \subsection*{Тест}
+        \testtasks
+    \subsection*{Базовые обязательные задания}
+        \basetasks
+    \subsection*{Дополнительные индивидуальные задания}
+        \restartlist{enumerate}
+        \begin{enumerate}
+            \input{people/#1}
+        \end{enumerate}
+}
+
+\begin{document}
+%    \studentpage{binkevich}
+%    \studentpage{bakumenko}
+%    \studentpage{balbek}
+%    \studentpage{vedernikova}
+     \studentpage{golius}{Маргарита Голиус}
+%    \studentpage{grishkova}
+%    \studentpage{ermolenko}
+%    \studentpage{zaharova}
+%    \studentpage{klukin}
+%    \studentpage{konovalova}
+%    \studentpage{krengauz}
+%    \studentpage{kuz}
+%    \studentpage{lazareva}
+%    \studentpage{markelova}
+%    \studentpage{sinkin}
+%    \studentpage{stupnikova}
+%    \studentpage{tishevich}
+\end{document}
+
