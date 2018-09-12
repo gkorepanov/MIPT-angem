@@ -8,20 +8,18 @@
 % horizontal analog of raisebox
 \newcommand{\shiftright}[2]{\makebox[#1][r]{\makebox[0pt][l]{#2}}}
 
-\input{obligatory}
 \input{optional}
 
 \newcommand{\studentpage}[2]{%
     \newpage\setcounter{page}{1}
-    \begin{flushright}
-        Студент: #2
-    \end{flushright}
-
-    \section*{Материалы к воркшопу по аналитической геометрии}
-    \subsection*{Тест}
-        \testtasks
+    \fancyhead[R]{#2}
+    \fancyhead[L]{14 сентября 2018 г.}
+    \section*{Тест к воркшопу по аналитической геометрии}
+        \input{test}
+    \newpage
+    \section*{Задания к воркшопу по аналитической геометрии}
     \subsection*{Базовые обязательные задания}
-        \basetasks
+        \input{obligatory}
     \subsection*{Дополнительные индивидуальные задания}
         \restartlist{enumerate}
         \begin{enumerate}
@@ -33,7 +31,7 @@
 %    \studentpage{binkevich}
 %    \studentpage{bakumenko}
 %    \studentpage{balbek}
-%    \studentpage{vedernikova}
+     \studentpage{vedernikova}{Ведерникова Валерия}
      \studentpage{golius}{Маргарита Голиус}
 %    \studentpage{grishkova}
 %    \studentpage{ermolenko}

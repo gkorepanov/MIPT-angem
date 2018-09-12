@@ -32,8 +32,8 @@
 \RequirePackage[utf8]              {inputenc}
 \RequirePackage[english, russian]  {babel}
 \RequirePackage[ left     = 2.5cm,
-                 right    = 1.5cm,
-                 top      = 2.0cm,
+				 right    = 2.5cm,
+                 top      = 3.0cm,
                  bottom   = 1.25cm,
                  includefoot,
                  footskip = 1.25cm ]{geometry}
@@ -64,8 +64,9 @@
 \RequirePackage{fancyhdr}
     \pagestyle{fancy}
     \fancyhf{}
-    \renewcommand{\headrulewidth}{ .0em }
+    \renewcommand{\headrulewidth}{ .2pt }
     \renewcommand{\footrulewidth}{ .0em }
+    \fancyhead[R]{Это простой пример верхнего колонтитула}
     \fancyfoot[C]{\texttt{-~\thepage~-}}
 \RequirePackage{secdot}
 \RequirePackage{caption}
@@ -78,8 +79,7 @@
 \RequirePackage[inline]{enumitem}
     \setlist{leftmargin =   1cm,
              topsep     = -.0\parskip,
-             itemsep    = -.0\parskip,
-             resume
+             itemsep    = -.0\parskip
             }
 \RequirePackage{booktabs}
 \RequirePackage{array}

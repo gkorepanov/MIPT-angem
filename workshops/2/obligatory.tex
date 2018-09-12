@@ -1,266 +1,181 @@
-\def \testtasks {%
-    \restartlist{enumerate}
-    \begin{enumerate}
-		\item Дать определение:
-		\begin{tasks}(1)
-			\task ЛНЗ система:\ \hrulefill\par\hrulefill\par\hrulefill
-			\task ЛЗ система:\ \hrulefill\par\hrulefill\par\hrulefill
-			\task базис:\ \hrulefill\par\hrulefill\par\hrulefill\par\hrulefill
-			\task система координат:\ \hrulefill\par\hrulefill\par\hrulefill
-		\end{tasks}
-		
-		\item Запишите условия компланарности и коллинеарности векторов $\vec a = (a_1, a_2, a_3)^T$ и $\vec b = (b_1, b_2, b_3)^T$ (с помощью детерминанта):
-		\vspace{5cm}
-		
-		\item Является ли система векторов базисом в пространстве (a) / на плоскости (b,~c)?
-		\begin{center}
-		\begin{enumerate*}[itemjoin=\hspace{1.5cm}]
-			\item
-			$
-			\begin{pmatrix}
-				1 \\ 1 \\ 0
-			\end{pmatrix},
-			\begin{pmatrix}
-				1 \\ 0 \\ 0
-			\end{pmatrix},
-			\begin{pmatrix}
-				0 \\ 1 \\ 0
-			\end{pmatrix}
-			$
-			\item
-			$
-			\begin{pmatrix}
-				1 \\ 1 
-			\end{pmatrix},
-			\begin{pmatrix}
-				0 \\ 1
-			\end{pmatrix}
-			$	
-			\item
-			$
-			\begin{pmatrix}
-				1 \\ 1
-			\end{pmatrix},
-			\begin{pmatrix}
-				1 \\ 0
-			\end{pmatrix},
-			\begin{pmatrix}
-				0 \\ 1
-			\end{pmatrix}
-			$	
-		\end{enumerate*}
-		\end{center}
-		\newpage
-		\item Известно, что система векторов $\vec a, \vec b, \vec c$ состоит из трех попарно неколлинеарных компланарных векторов. Выберите верные утверждения:
-		\begin{tasks}
-			\task система $\vec a, \vec b, \vec c$ линейно зависима;
-			\task система $\vec a, \vec b, \vec c$ линейно независима;
-			\task система $\vec a, \vec b, \vec c$ образует базис в пространстве;
-			\task система $\vec a, \vec b, \vec c$ образует базис на плоскости, образованной векторами $\vec a$ и $\vec b$;
-			\task система $\vec a, \vec c$ образует базис на плоскости, образованной векторами $\vec a$ и $\vec b$.
-		\end{tasks}
-		
-		\item Определите, являются ли компланарными векторы
-		\[
-			\begin{pmatrix}
-				1 \\ 2 \\ 7
-			\end{pmatrix},
-			\begin{pmatrix}
-				1 \\ 1 \\ 1
-			\end{pmatrix},
-			\begin{pmatrix}
-				1 \\ 2 \\ 1
-			\end{pmatrix}
-		\]
+\begin{enumerate}
 
-		
-    \end{enumerate}
-}
+\item Вычислить линейные комбинации:
+    \[
+        \begin{pmatrix}
+            4 &  2 & 0 \\
+            1 &  3 & 5 \\
+            1 & -2 & 3
+        \end{pmatrix}
+        +2
+        \begin{pmatrix}
+           -2 &  1 & 0 \\
+           -1 &  0 & 1 \\
+            1 &  3 & 0
+        \end{pmatrix}
+        -4
+        \begin{pmatrix}
+           -1 &  0 & -1 \\
+            0 &  1 &  2 \\
+           -1 &  0 &  1
+        \end{pmatrix}
+        =
+    \]
+    \[
+        2
+        \begin{pmatrix}
+            1 \\
+            2 \\
+            3 \\
+            4
+        \end{pmatrix}
+        +
+        \begin{pmatrix}
+            4 \\
+            3 \\
+            2 \\
+            1
+        \end{pmatrix}
+        -
+        \begin{pmatrix}
+           -2 \\
+            6 \\
+            7 \\
+            6
+        \end{pmatrix}
+        =
+    \]
 
 
-\def \basetasks {%
-    \restartlist{enumerate}
-    \begin{enumerate}
+\item Найти произведения матриц:
+\begin{alignat*}{2}
+    \begin{pmatrix}
+        8 & 1 & 1 & 1
+    \end{pmatrix}
+    \cdot
+    \begin{pmatrix}
+        3 \\
+        -1 \\
+        -1 \\
+        -5
+    \end{pmatrix}
+    &=
+    & \hspace{3cm}
+    \begin{pmatrix}
+        8 \\
+        1 \\
+        1 \\
+        1
+    \end{pmatrix}
+    \cdot
+    \begin{pmatrix}
+        1 & 2 & 1 & 2
+    \end{pmatrix}
+    &= \\[1em]
+    \begin{pmatrix}
+        1 & 2 & 3\\
+        3 & 2 & 1
+    \end{pmatrix}
+    \cdot
+    \begin{pmatrix}
+        1 & 1 \\
+        1 & 0 \\
+        1 & 1
+    \end{pmatrix}
+    &=
+    &
+    \begin{pmatrix}
+        1 & 0 & 0\\
+        0 & 2 & 0\\
+        0 & 0 & 10
+    \end{pmatrix}
+    ^{10}
+    &=
+\end{alignat*}
 
 
-        \item Вычислить линейные комбинации:
-            \[
-                \begin{pmatrix}
-                    4 &  2 & 0 \\
-                    1 &  3 & 5 \\
-                    1 & -2 & 3
-                \end{pmatrix}
-                +2
-                \begin{pmatrix}
-                   -2 &  1 & 0 \\
-                   -1 &  0 & 1 \\
-                    1 &  3 & 0
-                \end{pmatrix}
-                -4
-                \begin{pmatrix}
-                   -1 &  0 & -1 \\
-                    0 &  1 &  2 \\
-                   -1 &  0 &  1
-                \end{pmatrix}
-                =
-            \]
-            \[
-                2
-                \begin{pmatrix}
-                    1 \\
-                    2 \\
-                    3 \\
-                    4
-                \end{pmatrix}
-                +
-                \begin{pmatrix}
-                    4 \\
-                    3 \\
-                    2 \\
-                    1
-                \end{pmatrix}
-                -
-                \begin{pmatrix}
-                   -2 \\
-                    6 \\
-                    7 \\
-                    6
-                \end{pmatrix}
-                =
-            \]
+\item Найдите транспонированные матрицы:
+\begin{alignat*}{2}
+    \begin{pmatrix}
+        1 & 2 & 3\\
+       -2 & 1 & 2\\
+       -3 & -2 & 1\\
+    \end{pmatrix}
+    ^T&=
+    & \hspace{3cm}
+    \begin{pmatrix}
+        8 \\
+        1 \\
+        1 \\
+        1 \\
+    \end{pmatrix}
+    ^T &=\hspace{3cm} \\[0.5em]
+    \begin{pmatrix}
+           \     &               &                       & \lambda_1  \\
+           \     & \shiftright{-30pt}{\raisebox{20pt}{\bigzero}}      & \reflectbox{$\ddots$} &  \\
+           \     & \lambda_{n-1} & \raisebox{-7pt}{\shiftright{17pt}{\bigzero}}              &  \\
+       \lambda_n &               &                       & 
+    \end{pmatrix}
+    ^T&= 
+\end{alignat*}
 
 
-        \item Найти произведения матриц:
-        \begin{alignat*}{2}
-            \begin{pmatrix}
-                8 & 1 & 1 & 1
-            \end{pmatrix}
-            \cdot
-            \begin{pmatrix}
-                3 \\
-                -1 \\
-                -1 \\
-                -5
-            \end{pmatrix}
-            &=
-            & \hspace{3cm}
-            \begin{pmatrix}
-                8 \\
-                1 \\
-                1 \\
-                1
-            \end{pmatrix}
-            \cdot
-            \begin{pmatrix}
-                1 & 2 & 1 & 2
-            \end{pmatrix}
-            &= \\[1em]
-            \begin{pmatrix}
-                1 & 2 & 3\\
-                3 & 2 & 1
-            \end{pmatrix}
-            \cdot
-            \begin{pmatrix}
-                1 & 1 \\
-                1 & 0 \\
-                1 & 1
-            \end{pmatrix}
-            &=
-            &
-            \begin{pmatrix}
-                1 & 0 & 0\\
-                0 & 2 & 0\\
-                0 & 0 & 10
-            \end{pmatrix}
-            ^{10}
-            &=
-        \end{alignat*}
+\item Вычислите детерминанты:
+\begin{align*}
+    \det 
+    \begin{pmatrix}
+        1 & 2 & 3 \\
+        1 & 0 & 1\\
+        1 & 1 & 1\\
+    \end{pmatrix}
+    &= 
+    &
+    \det 
+    \begin{pmatrix}
+        8000 & 1 & -1 \\
+        -101 & 1 & 0 \\
+        10 & 0 & 1 \\
+    \end{pmatrix}
+    &=
+\end{align*}
 
 
-        \item Найдите транспонированные матрицы:
-        \begin{alignat*}{2}
-            \begin{pmatrix}
-                1 & 2 & 3\\
-               -2 & 1 & 2\\
-               -3 & -2 & 1\\
-            \end{pmatrix}
-            ^T&=
-            & \hspace{3cm}
-            \begin{pmatrix}
-                8 \\
-                1 \\
-                1 \\
-                1 \\
-            \end{pmatrix}
-            ^T &=\hspace{3cm} \\[0.5em]
-            \begin{pmatrix}
-                   \     &               &                       & \lambda_1  \\
-                   \     & \shiftright{-30pt}{\raisebox{20pt}{\bigzero}}      & \reflectbox{$\ddots$} &  \\
-                   \     & \lambda_{n-1} & \raisebox{-7pt}{\shiftright{17pt}{\bigzero}}              &  \\
-               \lambda_n &               &                       & 
-            \end{pmatrix}
-            ^T&= 
-        \end{alignat*}
+\item Решите систему линейных уравнений, пользуясь правилом Крамера:
+\begin{align*}
+    \begin{cases}
+        2x + y - z = 2 \\
+        3x + y -2z = 3 \\
+        x + z = 3
+    \end{cases}
+    & & 
+    \begin{cases}
+        x + 2y + 3z = 1\\
+        x + y + z = 0\\
+        y + z = 1
+    \end{cases}
+\end{align*}
 
 
-        \item Вычислите детерминанты:
-        \begin{align*}
-            \det 
-            \begin{pmatrix}
-                1 & 2 & 3 \\
-                1 & 0 & 1\\
-                1 & 1 & 1\\
-            \end{pmatrix}
-            &= 
-            &
-            \det 
-            \begin{pmatrix}
-                8000 & 1 & -1 \\
-                -101 & 1 & 0 \\
-                10 & 0 & 1 \\
-            \end{pmatrix}
-            &=
-        \end{align*}
+\item Вычислите:
+\begin{align*}
+    A &= \begin{pmatrix}1 & 2 \\2 & 1 \end{pmatrix} &
+    B &= \begin{pmatrix}2 & 1 \\1 & 2 \end{pmatrix} &
+    (A^3 -4B) &=
+\end{align*}
 
 
-        \item Решите систему линейных уравнений, пользуясь правилом Крамера:
-        \begin{align*}
-            \begin{cases}
-                2x + y - z = 2 \\
-                3x + y -2z = 3 \\
-                x + z = 3
-            \end{cases}
-            & & 
-            \begin{cases}
-                x + 2y + 3z = 1\\
-                x + y + z = 0\\
-                y + z = 1
-            \end{cases}
-        \end{align*}
+\item Используя свойства детерминанта, вычислите:
+\[
+    \det 
+    \begin{pmatrix}
+    0 & 1 & 2 & 3 & 4 & 5 \\
+    1 & 2 & 3 & 4 & 5 & 6 \\
+    1 & 2 & 3 & 5 & 7 & 9 \\
+    1 & 2 & 4 & 6 & 8 & 10 \\
+    1 & 2 & 3 & 4 & 5 & 7 \\
+    1 & 2 & 3 & 4 & 6 & 8
+    \end{pmatrix}
+\]
 
 
-        \item Вычислите:
-        \begin{align*}
-            A &= \begin{pmatrix}1 & 2 \\2 & 1 \end{pmatrix} &
-            B &= \begin{pmatrix}2 & 1 \\1 & 2 \end{pmatrix} &
-            (A^3 -4B) &=
-        \end{align*}
-
-
-        \item Используя свойства детерминанта, вычислите:
-        \[
-            \det 
-            \begin{pmatrix}
-            0 & 1 & 2 & 3 & 4 & 5 \\
-            1 & 2 & 3 & 4 & 5 & 6 \\
-            1 & 2 & 3 & 5 & 7 & 9 \\
-            1 & 2 & 4 & 6 & 8 & 10 \\
-            1 & 2 & 3 & 4 & 5 & 7 \\
-            1 & 2 & 3 & 4 & 6 & 8
-            \end{pmatrix}
-        \]
-
-
-    \end{enumerate}
-}
-
+\end{enumerate}
