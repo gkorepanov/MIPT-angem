@@ -10,7 +10,7 @@
 
 \newcommand{\studentpage}[2]{%
     \newpage\setcounter{page}{1}
-    \fancyhead[R]{#2}
+    \fancyhead[R]{#1}
     \fancyhead[L]{14 сентября 2018 г.}
     \section*{Тест к воркшопу по аналитической геометрии}
         \input{test}
@@ -21,13 +21,25 @@
     \newpage
     \subsection*{Дополнительные индивидуальные задания}
         \begin{enumerate}
-            \input{people/#1}
+            #2
         \end{enumerate}
 }
 
+\def \simpleset {%
+	\CommonOne
+	\CommonTwo
+	\SimpleOne
+	\SimpleTwo}
+	
+\def \hardset {%
+	\CommonOne
+	\CommonTwo
+	\HardOne
+	\HardTwo}
+
 \begin{document}
-	 \studentpage{sample}{Студент Студентович}
-%    \studentpage{binkevich}
+	 \studentpage{Студент Студентович}{\simpleset\hardset}
+     \studentpage{Бинкевич Александр}{\hardset}
 %    \studentpage{bakumenko}
 %    \studentpage{balbek}
 %    \studentpage{vedernikova}{Ведерникова Валерия}

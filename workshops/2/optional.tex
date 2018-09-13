@@ -1,17 +1,36 @@
-\def \CenterTask {%
+% Common
+\def \CommonOne {%
     \item Пусть даны $N$ точек $A_1, A_2, \dots, A_n$. Найти \textbf{все} точки $O$ такие, что
-    $$\vec{OA_1} + \vec{OA_2} + \dots + \vec{OA_n} = \vec{0}.$$
+    $$\overrightarrow{OA_1} + \overrightarrow{OA_2} + \dots + \overrightarrow{OA_n} = \overrightarrow{0}.$$
+}
+\def \CommonTwo {
+	\item В $\triangle ABC$ проведена биссектриса $AD$. Найти координаты вектора $AD$ в базисе, образованном векторами $\overrightarrow{AB}$ и $\overrightarrow{AC}$.}
+% simple
+
+\def \SimpleOne {%
+	\item
+	Три точки
+	$$A(x, y), \quad B(x_2, y_2) \quad \text{и} \quad C(x_3, y_3),$$
+	не лежащие на одной прямой, являются последовательными вершинами параллелограмма. Найти координаты четвертой вершины.
 }
 
-\def \MedianIntersectionTask {%
+\def \SimpleTwo {%
+	\item Даны две точки $A(3, -2)$  и $B(1, 4)$. Точка $M$ лежит на прямой $AB$, причем $|AM| = 3|AB|$. Найдите координаты точки $M$, если
+	\begin{enumerate}
+		\item точка $M$ лежит по одну сторону от $A$ вместе с $B$;
+		\item точки $M$ и $B$ лежат по разные стороны от $A$.
+	\end{enumerate}
+}
+
+
+% Hard
+\def \HardOne {%
 	\item Даны три точки:
 	$$A(x_1, y_1, z_1),\quad B(x_2, y_2, z_2)\quad  \text{и} \quad  C(x_3, y_3, z_3),$$
 	не лежащие на одной прямой. Найдите координаты точки пересечения медиан~$\triangle ABC$.
 }
 
-\def \ParalForthTask {%
-	\item
-	Три точки
-	$$A(x, y), \quad B(x_2, y_2) \quad \text{и} \quad C(x_3, y_3),$$
-	не лежащие на одной прямой, являются последовательными вершинами параллелограмма.
-}
+\def \HardTwo {%
+	\item Доказать, что если диагонали четырехугольника в точке пересечения делятся пополам, то этот четырехугольник --- параллелограмм.}
+
+
