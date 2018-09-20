@@ -1,0 +1,52 @@
+\documentclass{angem}
+
+% bigzero for matrices
+\newcommand\bigzero{\makebox(0,0){\text{\huge0}}}
+
+% horizontal analog of raisebox
+\newcommand{\shiftright}[2]{\makebox[#1][r]{\makebox[0pt][l]{#2}}}
+
+\let \vec \mathbf
+
+\input{optional}
+
+\newcommand{\studentpage}[2]{%
+    \newpage\setcounter{page}{1}
+    \fancyhead[R]{#1}
+    \fancyhead[L]{20 сентября 2018 г.}
+    \section*{Тест к воркшопу по аналитической геометрии}
+		\input{test}
+    \newpage
+    a
+    \newpage
+    \section*{Задания к воркшопу по аналитической геометрии}
+    \subsection*{Базовые обязательные задания}
+        \input{obligatory}
+    \newpage
+    \subsection*{Дополнительные индивидуальные задания}
+        \begin{enumerate}
+            #2
+        \end{enumerate}
+}
+
+
+\begin{document}
+	\studentpage{Алесь Бінкевіч}{\bottask \mediumA}
+	\studentpage{Бакуменко Сергей}{\bottask \mediumB}
+	\studentpage{Балбек Кирилл}{\bottask \mediumC}
+	\studentpage{Ведерникова Валерия}{\bottask \hardA}
+	\studentpage{Голиус Маргарита}{\bottask \mediumF}
+	\studentpage{Гришкова Лиза}{\bottask \hardB}
+	\studentpage{Ермоленко Александр}{\bottask \mediumD}
+	\studentpage{Захарова Анастасия}{\bottask \mediumA}
+	\studentpage{Клюкин Михаил}{\bottask \easyB}
+	\studentpage{Коновалова Татьяна}{\bottask \mediumD}
+	\studentpage{Кренгауз Михаил}{\bottask \mediumB}
+	\studentpage{Кузь Глеб}{\bottask \easyA}
+	\studentpage{Лазарева Анастасия}{\bottask \hardC}
+	\studentpage{Маркелова Екатерина}{\bottask \easyB}
+	\studentpage{Синькин Александр}{\bottask \hardA}
+	\studentpage{Ступникова Галина}{\bottask \easyC}
+	\studentpage{Тышевич Андрей}{\bottask \mediumC}
+\end{document}
+
