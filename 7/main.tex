@@ -1,0 +1,64 @@
+\documentclass{angem}
+
+% bigzero for matrices
+\newcommand\bigzero{\makebox(0,0){\text{\huge0}}}
+
+% horizontal analog of raisebox
+\newcommand{\shiftright}[2]{\makebox[#1][r]{\makebox[0pt][l]{#2}}}
+
+\input{optional}
+
+\newcommand{\studentpage}[2]{%
+    \newpage\setcounter{page}{1}
+    \fancyhead[R]{#1}
+    \fancyhead[L]{1 ноября 2018 г.}
+    \section*{Тест к воркшопу по аналитической геометрии}
+        \input{test}
+    \newpage
+    \
+    \newpage
+     \section*{Задания к воркшопу по аналитической геометрии}
+      \subsection*{Базовые обязательные задания}
+         \input{obligatory}
+      \newpage
+    \subsection*{Дополнительные индивидуальные задания}
+        \begin{enumerate}
+            #2
+        \end{enumerate}
+}
+
+\let\vec\mathbf
+
+\def \easyA {
+	\item
+}
+
+\def \easyB {
+	\item
+}
+
+\def \hard {
+	\item
+}
+
+
+\begin{document}
+   \studentpage{Алесь Бінкевіч}{\easyA}
+%	\studentpage{Бакуменко Сергей}{\easyB}
+%	\studentpage{Балбек Кирилл}{\easyA}
+%	\studentpage{Ведерникова Валерия}{\easyB}
+%	\studentpage{Голиус Маргарита}{\easyA}
+%	\studentpage{Гришкова Лиза}{\hard}
+%	\studentpage{Ермоленко Александр}{\easyB}
+%	\studentpage{Захарова Анастасия}{\easyA}
+%	\studentpage{Клюкин Михаил}{\easyB}
+%	\studentpage{Коновалова Татьяна}{\easyA}
+%	\studentpage{Кренгауз Михаил}{\easyB}
+%	\studentpage{Кузь Глеб}{\easyA}
+%	\studentpage{Лазарева Анастасия}{\hard}
+%	\studentpage{Маркелова Екатерина}{\easyB}
+%	\studentpage{Синькин Александр}{\easyA}
+%	\studentpage{Ступникова Галина}{\easyB}
+%	\studentpage{Тышевич Андрей}{\easyA} 
+\end{document}
+
