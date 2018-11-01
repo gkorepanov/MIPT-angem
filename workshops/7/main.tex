@@ -1,0 +1,48 @@
+\documentclass{angem}
+
+% bigzero for matrices
+\newcommand\bigzero{\makebox(0,0){\text{\huge0}}}
+
+% horizontal analog of raisebox
+\newcommand{\shiftright}[2]{\makebox[#1][r]{\makebox[0pt][l]{#2}}}
+
+\input{optional}
+
+\newcommand{\studentpage}[2]{%
+    \newpage\setcounter{page}{1}
+    \fancyhead[R]{#1}
+    \fancyhead[L]{1 ноября 2018 г.}
+    \section*{Тест к воркшопу по аналитической геометрии}
+        \input{test}
+    \newpage
+     \section*{Задания к воркшопу по аналитической геометрии}
+      \subsection*{Базовые обязательные задания}
+         \input{obligatory}
+      \newpage
+    \subsection*{Дополнительные индивидуальные задания}
+        \begin{enumerate}
+            #2
+        \end{enumerate}
+}
+
+\begin{document}
+   \studentpage{Алесь Бінкевіч}{\firstB \secondB \third}
+	\studentpage{Бакуменко Сергей}{\firstB \secondB \third}
+	\studentpage{Балбек Кирилл}{\firstA \secondA \third}
+	\studentpage{Ведерникова Валерия}{\firstB \secondC \third}
+	\studentpage{Голиус Маргарита}{\firstB \secondC \third}
+	\studentpage{Гришкова Лиза}{\firstB \secondC \third}
+	\studentpage{Ермоленко Александр}{\firstB \secondC \third}
+	\studentpage{Захарова Анастасия}{\firstA \secondB \third}
+	\studentpage{Клюкин Михаил}{\firstA \secondA \third}
+	\studentpage{Коновалова Татьяна}{\firstB \secondC \third}
+	\studentpage{Кренгауз Михаил}{\firstB \secondB \third}
+	\studentpage{Кузь Глеб}{\firstA \secondA \third}
+	\studentpage{Лазарева Анастасия}{\firstA \secondB \third}
+	\studentpage{Маркелова Екатерина}{\firstA \secondA \third}
+	\studentpage{Синькин Александр}{\firstB \secondC \third}
+	\studentpage{Ступникова Галина}{\firstB \secondA \third}
+	\studentpage{Тышевич Андрей}{\firstB \secondC \third} 
+\end{document}
+
+
