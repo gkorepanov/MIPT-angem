@@ -87,3 +87,10 @@
     \renewcommand{\arraystretch}{ 1.20 }
 
 \sloppy
+
+\newcommand{\mycases}[2]{\parbox[c][1.7cm]{4.4cm} {
+  $\begin{cases}
+  	#1
+  \end{cases}$#2}}
+  
+ \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}

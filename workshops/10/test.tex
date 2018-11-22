@@ -1,30 +1,40 @@
 \begin{enumerate}
-	\item Заполните пропуски в таблице:
-	\begin{figure*}[ht]
-		\centering
-		\includegraphics{1}
-	\end{figure*}
-	
-	\item Какие из перечисленных уравнений задают некоторую поверхность вращения?
-	\begin{tasks}[after-item-skip=5pt](3)
-		\task $\dfrac{x^2}{2} + \dfrac{y^2}{2} + \dfrac{z^2}{3} = 1$
-		\task $\dfrac{x^2}{2} - \dfrac{y^2}{2} = 2z$
-		\task $\dfrac{x^2}{2} + \dfrac{y^2}{2} = 2z$
-		\task $\dfrac{x^2}{4} + \dfrac{y^2}{3} - \dfrac{z^2}{3} = 1$
-		\task $x^2=0$
+\item Заполните таблицу ($k, \lambda, \alpha_i, \varphi \neq 0$):
 
+\bgroup
+
+\begin{tabular}{l||C{3.6cm}|C{1.5cm} | C{1.5cm} | C{1.7cm}}
+  Преобразование & Название & Линейное? & Афинное? & Ортогональное?\\
+  \hline\hline
+   \mycases{x'=kx\\
+  	y'=ky}{} &  & $\times$ & &\\
+   \hline
+   \mycases{x'=\\y'=}{} & Сжатие к оси $Oy$ c коэффициентом $\lambda$ & & & \\
+   \hline
+   \mycases{x'=x+\alpha_1\\y'=y+\alpha_2}{} &  & & & \\
+   \hline
+   \mycases{x'=\\y'=}{} & Поворот на угол $\varphi$ & & & \\
+   \hline
+   \mycases{x'=0\\y'=1}{} & --- & & & \\
+   \hline
+   \mycases{x'=x^2\\y'=-x}{} & ---  & & & \\
+   \hline
+   \mycases{x'=3x+4\\y'=x-y+1}{} & --- & & & \\
+   
+\end{tabular}
+\egroup
+
+\item При преобразовании, заданном формулами $x' = \sqrt 3 x + \sqrt 2 y$, $y' = \sqrt 2 x + \sqrt 3 y + 2$, найдите:
+	\begin{tasks}(1)
+		\task
+			Площадь образа треугольника с вершинами $A(0, 0)$, $B(1, 0)$ и $C(\sqrt{8111}, 3)$. 
+		\task Образы базисных векторов
+		\task Образ вектора $\vec x (1, 4)$
+		\task Образ прямой $y=0$
 	\end{tasks}
 	
-	\item Определите тип кривой $x^2 + y^2 = \lambda z^2$ при всех возможных $\lambda \in \mathbb{R}$.
-	\vspace{4cm}
-	\item Выберите уравнения поверхностей, содержащих прямолинейные образующие:	
-	\begin{tasks}[after-item-skip=5pt](3)
-		\task $x^2 + \dfrac{y^2}{2} + z^2 = 1$
-		\task $x^2 + \dfrac{y^2}{2} - z^2 = 1$
-		\task $x^2 + \dfrac{y^2}{2} - z^2 = 0$
-		\task $x^2 - \dfrac{y^2}{2} - z^2 = 1$
-
-	\end{tasks}
-	\item Запишите параметрическое уравнения прямолинейной образующей поверхности $4x^2 + y^2 = 4$, проходящей через точку $(1,\ 0,\ 7)$.
-
+\item
+Запишите преобразование, переводящее точки $A(1, 0)$, $B(0, 1)$, $C(1, 1)$ в $A'(-3, 5)$, $B'(4, -3)$, $C'(0, 0)$ соответственно.
+\item
+Сколько неподвижных точек может иметь произвольное линейное преобразование? 
 \end{enumerate}
