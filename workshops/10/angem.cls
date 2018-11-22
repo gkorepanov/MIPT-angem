@@ -88,7 +88,7 @@
 
 \sloppy
 
-\newcommand{\mycases}[2]{\parbox[c][1.7cm]{4.4cm} {
+\newcommand{\mycases}[2]{\parbox[c][1.7cm]{4.1cm} {
   $\begin{cases}
   	#1
   \end{cases}$#2}}
