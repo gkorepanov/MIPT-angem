@@ -85,3 +85,5 @@
 \RequirePackage{booktabs}
 \RequirePackage{array}
     \renewcommand{\arraystretch}{ 1.20 }
+
+\sloppy
