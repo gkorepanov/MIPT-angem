@@ -1,0 +1,52 @@
+\documentclass{angem}
+
+% bigzero for matrices
+\newcommand\bigzero{\makebox(0,0){\text{\huge0}}}
+
+% horizontal analog of raisebox
+\newcommand{\shiftright}[2]{\makebox[#1][r]{\makebox[0pt][l]{#2}}}
+
+\input{optional}
+
+\newcommand{\studentpage}[2]{%
+    \newpage \setcounter{page}{1}
+    \fancyhead[R]{#1}
+    \fancyhead[L]{29 ноября 2018 г.}
+    \section*{Тест к воркшопу по аналитической геометрии}
+       \input{test}
+   \newpage
+     \section*{Материалы к воркшопу по аналитической геометрии}
+      \subsection*{Базовые обязательные задания}
+         \input{obligatory}
+      \newpage
+  \subsection*{Дополнительные индивидуальные задачи}
+       \begin{enumerate}
+        #2
+       \end{enumerate}
+
+        
+}
+
+
+\begin{document}
+	\studentpage{One nice student}{\share}
+	\studentpage{Вариант 2}{\share}
+%	\studentpage{Алесь Бінкевіч}{\share}
+%	\studentpage{Бакуменко Сергей}{\share}
+%	\studentpage{Балбек Кирилл}{\share}
+%	\studentpage{Ведерникова Валерия}{\share}
+%	\studentpage{Голиус Маргарита}{\share}
+%	\studentpage{Гришкова Лиза}{\share}
+%	\studentpage{Ермоленко Александр}{\share}
+%	\studentpage{Захарова Анастасия}{\share}
+%	\studentpage{Клюкин Михаил}{\share}
+%	\studentpage{Коновалова Татьяна}{\share}
+%	\studentpage{Кренгауз Михаил}{\share}
+%	\studentpage{Кузь Глеб}{\share}
+%	\studentpage{Лазарева Анастасия}{\share}
+%	\studentpage{Маркелова Екатерина}{\share}
+%	\studentpage{Синькин Александр}{\share}
+%	\studentpage{Ступникова Галина}{\share}
+%	\studentpage{Тышевич Андрей}{\share} 
+\end{document}
+
